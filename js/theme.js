@@ -28,4 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', theme);
         });
     }
+
+    // Hamburger Menu Logic
+    const hamburgerBtn = document.getElementById('hamburger-menu');
+    const navList = document.querySelector('nav ul');
+
+    if (hamburgerBtn && navList) {
+        hamburgerBtn.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    }
 });

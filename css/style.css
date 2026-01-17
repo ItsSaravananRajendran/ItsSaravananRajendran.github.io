@@ -129,6 +129,11 @@ nav a.active {
   border-bottom: 2px solid var(--accent-color);
 }
 
+/* Hamburger Menu (Default Desktop) */
+.hamburger-menu {
+  display: none;
+}
+
 /* Theme Toggle Switch */
 .theme-toggle-wrapper {
   display: flex;
@@ -342,7 +347,7 @@ nav a.active {
 /* Content Pages */
 .page-title {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: center;
   font-size: 2.5rem;
 }
@@ -441,10 +446,97 @@ nav a.active {
 
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
+
+  /* Tighter container for mobile */
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Reduce Logo size to fit with Hamburger */
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  /* Header & Nav - Hamburger Layout */
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  /* Show Hamburger */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 0.5rem;
+    margin-left: auto;
+    /* Force to right */
+  }
+
+  /* Nav Container moves to next line (but absolute now) */
+  nav {
+    order: 3;
+    /* Position context for absolute dropdown if needed, 
+           but usually header relative works better. 
+           Let's rely on header relative. */
+  }
+
+  /* Standard header relative positioning */
+  header {
+    position: relative;
+  }
+
+  /* Nav List - Overlay Mode */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    /* Push it right below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    /* Match theme bg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    /* Add side padding for alignment */
+    text-align: left;
+    align-items: flex-start;
+    align-items: flex-start;
+    /* Flex items align left */
+    border-top: 1px solid var(--border-color);
+    z-index: 100;
+    /* Ensure it floats on top */
+  }
+
+  /* Ensure links take full width for easier clicking and consistent alignment */
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Ensure links take full width */
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Show class added via JS */
+  nav ul.show {
+    display: flex;
+  }
+
+  /* Hero */
   .hero {
     flex-direction: column;
-    /* Text Above Image */
     gap: 2rem;
     text-align: center;
   }
@@ -452,11 +544,31 @@ nav a.active {
   .hero p,
   .social-links {
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  /* Content Layout */
   .recent-content {
     flex-direction: column;
     gap: 3rem;
+  }
+
+  /* Timeline & Lists */
+  .timeline,
+  .paper-list {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .book-list {
+    padding-left: 1.5rem;
+    /* Restore bullet indentation */
+    margin-left: 0;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
   }
 }
 
