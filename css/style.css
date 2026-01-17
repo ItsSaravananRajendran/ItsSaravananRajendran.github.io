@@ -271,15 +271,29 @@ nav a.active {
 
 .section-header {
   display: flex;
-  align-items: baseline;
-  gap: 1rem;
+  align-items: flex-start;
+  /* Align to top so texts stack nicely vs the link */
+  justify-content: space-between;
   margin-bottom: 2rem;
   font-family: var(--font-serif);
 }
 
+.section-header div {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-header h3 {
-  margin-bottom: 0;
+  margin-bottom: 0.2rem;
   font-size: 1.5rem;
+}
+
+.section-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: normal;
 }
 
 .section-header a {
@@ -287,6 +301,8 @@ nav a.active {
   color: var(--link-color);
   font-family: var(--font-sans);
   font-weight: normal;
+  margin-top: 5px;
+  /* Visual alignment with title */
 }
 
 /* Item List / Jitter Reduction */
@@ -445,5 +461,35 @@ nav a.active {
 }
 
 
+
+
+/* Left Alignment Utility */
+.left-aligned {
+  text-align: left;
+}
+
+.left-aligned .page-title {
+  text-align: left;
+}
+
+.left-aligned p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Timeline Left Align (Default is left, but ensuring override if needed) */
+.left-aligned .timeline-item {
+  text-align: left;
+}
+
+/* Force left alignment for containers in left-aligned mode */
+.left-aligned .timeline,
+.left-aligned .paper-list,
+.left-aligned .book-list {
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 100%;
+}
 
 /* End of styles */
