@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papershelf - Saravanan Rajendran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="logo">
+            <a href="index.html">Saravanan Rajendran</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="papershelf.html" class="active" style="color: var(--accent-color);">Papershelf</a></li>
+                <li><a href="bookshelf.html">Bookshelf</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="accomplishments.html">Accomplishments</a></li>
+                <li>
+                    <div class="theme-toggle-wrapper" id="theme-toggle-btn">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="theme-toggle-ball"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Papershelf</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto; color: var(--secondary-color);">
+            Research papers and technical deep-dives I've written or find significant.
+        </p>
+
+        <div class="paper-list" id="papershelf-list">
+            <!-- Loaded from papers.json -->
+        </div>
+    </main>
+
+    <script src="js/theme.js"></script>
+    <script src="js/papers.js"></script>
+</body>
+
+</html>
