@@ -312,7 +312,6 @@ nav a.active {
 
 /* Item List / Jitter Reduction */
 .item-list,
-.book-list,
 .paper-list {
   min-height: 200px;
   /* Prevent layout shift while loading */
@@ -442,6 +441,10 @@ nav a.active {
 
 .book-list li {
   margin-bottom: 0.75rem;
+}
+
+.read-section {
+  margin-top: 3rem;
 }
 
 
