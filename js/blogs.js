@@ -9,15 +9,13 @@ async function fetchMediumBlogs() {
     // Only fetch if at least one container exists
     if (!blogContainer && !recentPostsContainer) return;
 
-    const mediumUsername = 'saravananrajendran';
-    const rssUrl = `https://medium.com/feed/@${mediumUsername}`;
-    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
-
+    // Refreshed by GitHub Actions; page loads never depend on an RSS proxy.
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch('blogs.json');
+        if (!response.ok) throw new Error(`Blog feed returned HTTP ${response.status}`);
         const data = await response.json();
 
-        if (data.status === 'ok') {
+        if (Array.isArray(data.items) && data.items.length > 0) {
             if (blogContainer) {
                 renderBlogs(data.items, blogContainer);
             }

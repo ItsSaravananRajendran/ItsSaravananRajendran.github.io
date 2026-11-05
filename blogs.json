@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "title": "Building a search engine, A top-down approach.",
+      "link": "https://medium.com/hackonhackathon/building-a-search-engine-a-top-down-approach-10a9e78b2019?source=rss-1ea2546d4e30------2",
+      "pubDate": "2020-06-26T16:38:39+00:00",
+      "categories": [
+        "hackon",
+        "hackathons",
+        "elasticsearch",
+        "community"
+      ]
+    },
+    {
+      "title": "“To develop better software, you need SOLID principles.",
+      "link": "https://medium.com/swlh/to-develop-better-software-you-need-solid-principles-bb27938cb88f?source=rss-1ea2546d4e30------2",
+      "pubDate": "2020-05-25T15:42:12+00:00",
+      "categories": [
+        "software-engineering",
+        "coding-style",
+        "object-oriented-design",
+        "solid-principles"
+      ]
+    },
+    {
+      "title": "Introduction to Perceptron and Visualization",
+      "link": "https://medium.com/@saravananrajendran/introduction-to-perceptron-and-visualization-21e640a27c8e?source=rss-1ea2546d4e30------2",
+      "pubDate": "2019-02-10T03:40:00+00:00",
+      "categories": [
+        "perceptron",
+        "machine-learning",
+        "plotly",
+        "tutorial"
+      ]
+    },
+    {
+      "title": "Deep Learning Series — Setup",
+      "link": "https://medium.com/@saravananrajendran/deep-learning-series-setup-a807fee887c0?source=rss-1ea2546d4e30------2",
+      "pubDate": "2019-01-05T16:55:19+00:00",
+      "categories": [
+        "numpy",
+        "deep-learning",
+        "visualization",
+        "matplotlib",
+        "python"
+      ]
+    },
+    {
+      "title": "My First Intern",
+      "link": "https://medium.com/@saravananrajendran/my-first-intern-a2cb02cd4ef2?source=rss-1ea2546d4e30------2",
+      "pubDate": "2017-07-13T18:58:51+00:00",
+      "categories": [
+        "startup",
+        "life",
+        "internships",
+        "leadership-development"
+      ]
+    }
+  ]
+}
