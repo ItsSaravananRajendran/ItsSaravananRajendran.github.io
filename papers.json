@@ -6,25 +6,25 @@
         "meta": "LLM Safety • Activation Monitoring"
     },
     {
-        "year": "2025",
+        "year": "2026",
         "title": "Delta Sharing: An Open Protocol for Cross-Platform Data Sharing",
         "url": "https://www.vldb.org/pvldb/vol18/p5197-puttaswamy.pdf",
         "meta": "Data Sharing • Distributed Systems"
     },
     {
-        "year": "2025",
+        "year": "2026",
         "title": "SynCode: LLM Generation with Grammar Augmentation",
         "url": "https://arxiv.org/abs/2403.01632",
         "meta": "Grammar-Constrained Generation • Formal Languages"
     },
     {
-        "year": "2025",
+        "year": "2026",
         "title": "Ursa: A Lakehouse-Native Data Streaming Engine for Kafka",
         "url": "https://www.vldb.org/pvldb/vol18/p5184-guo.pdf",
         "meta": "Data Streaming • Lakehouse Architecture"
     },
     {
-        "year": "2024",
+        "year": "2026",
         "title": "RAMP: Boosting Adversarial Robustness Against Multiple lₚ Perturbations for Universal Robustness",
         "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/4d5ce4a7ebf588834db127965cdb5ccb-Abstract-Conference.html",
         "meta": "Adversarial Robustness • Machine Learning"
