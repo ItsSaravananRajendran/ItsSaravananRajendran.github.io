@@ -607,4 +607,71 @@ nav a.active {
   max-width: 100%;
 }
 
+/* Hosted projects */
+header.container {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul {
+  flex-wrap: wrap;
+}
+
+.projects-intro {
+  color: var(--secondary-color);
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.projects-list {
+  padding-bottom: 3rem;
+}
+
+.project-item h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  margin: 0.75rem 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.project-links a,
+.projects-preview p a {
+  color: var(--link-color);
+}
+
+.projects-preview {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.projects-preview .section-header {
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.projects-preview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-item .paper-year {
+    flex-basis: auto;
+  }
+}
+
 /* End of styles */
