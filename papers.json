@@ -1,6 +1,12 @@
 [
     {
         "year": "2026",
+        "title": "Towards Universal Certified Robustness with Multi-Norm Training",
+        "url": "https://arxiv.org/abs/2410.03000v1",
+        "meta": "Certified Robustness • Multi-Norm Training"
+    },
+    {
+        "year": "2026",
         "title": "Beyond Linear Probes: Dynamic Safety Monitoring for Language Models",
         "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5a829e299ebc1c1615ddb09e98fb6ce8-Abstract-Conference.html",
         "meta": "LLM Safety • Activation Monitoring"
